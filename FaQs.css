@@ -1,0 +1,69 @@
+.faq_contentent {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    margin-top: 90px;
+}
+
+.faq_box {
+
+    width: 1000px;
+    height: 700px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+
+}
+
+.title {
+
+    margin: 40px 0px 40px 0px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.question {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.arrow.active {
+    transform: rotate(180deg);
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: aliceblue;
+}
+
+.answer.show {
+    max-height: 500px; /* Adjust the height based on your content */
+}

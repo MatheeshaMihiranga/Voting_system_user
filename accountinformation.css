@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+
+
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+
+img.logo {
+    width: 300px;
+}
+
+nav ul li {
+
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: .4s;
+
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: #ffff;
+    font-size: 25px;
+}
+
+nav ul li:hover {
+
+    transform: scale(1.3);
+    cursor: pointer;
+    z-index: 1000;
+
+}
+
+ul.topTabView li ul.dropdown li:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+ul.topTabView li ul.dropdown li {
+    display: block;
+
+}
+
+ul.topTabView li ul.dropdown li a {
+
+    font-size: 14px;
+
+}
+
+ul.topTabView li ul.dropdown {
+
+    width: 300px;
+    position: fixed;
+    z-index: 999;
+    display: none;
+    background-color: transparent;
+
+}
+
+ul.topTabView li:hover ul.dropdown {
+    display: block;
+
+}
+
+.topImageView {
+    display: flex;
+    justify-content: flex-start;
+    flex: 4;
+}
+
+.topTabView {
+    display: flex;
+    justify-content: center;
+    flex: 8;
+}
+
+.topRightButton {
+    display: flex;
+    justify-content: flex-end;
+    flex: 4;
+}
+
+.signup:hover {
+
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.signup {
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: .4s;
+
+}
+
+.backgroundimg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.page_content {
+
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.acc_image {
+
+    flex: 0.4;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    height: 750px;
+
+}
+
+.acc_info {
+
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    padding-left: 10px;
+
+}
+
+.info_box_details {
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+
+}
+
+.info_box_pass {
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+
+}
+
+.input_box_password {
+    margin-top: 20px;
+}
+
+.input_box {
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+
+.input_box label {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.input_box input {
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.712);
+    outline: #fff;
+    color: #000000;
+    z-index: 999;
+    width: 100%;
+}
+
+.save_button {
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: .4s;
+
+}
+
+.save_button:hover {
+
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .topImageView {
+        flex: 16;
+    }
+
+    .topTabView {
+
+        flex: 16
+    }
+
+    .topRightButton {
+        flex: 16;
+    }
+
+    nav {
+
+        flex-direction: column;
+
+    }
+
+    img.logo {
+
+        width: 100px;
+
+
+    }
+
+    nav ul li {
+
+        list-style-type: none;
+        display: flex;
+        padding: 10px;
+        transition: .4s;
+
+    }
+
+    .content h5 {
+        font-size: 20px;
+    }
+
+}
